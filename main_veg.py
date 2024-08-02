@@ -4,8 +4,6 @@ import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
 
-# Load the Excel data
-@st.cache
 def load_data(filepath):
     return pd.read_excel(filepath, sheet_name="8-1-2024")
 
