@@ -178,7 +178,7 @@ def price_recommendation(df):
     excel_buffer = io.BytesIO()
     with pd.ExcelWriter(excel_buffer, engine='xlsxwriter') as writer:
         result_df.to_excel(writer, index=False, sheet_name='Sheet1')
-        writer.save()
+        # writer.save()
 
     st.download_button(
         label="Download lowest price data as Excel",
