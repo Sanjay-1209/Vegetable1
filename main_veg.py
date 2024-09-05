@@ -13,7 +13,7 @@ st.set_page_config(layout="wide")
 @st.cache
 def load_data(filepath):
     """Load the Excel data from the specified sheet."""
-    return pd.read_excel(filepath, sheet_name="8-1-2024")
+    return pd.read_excel(filepath)
 
 def main():
     # Set the app title
